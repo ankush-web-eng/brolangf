@@ -4,25 +4,24 @@ import "@/styles/globals.css";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/context/ThemeProvider";
 import { CodeProvider } from "@/context/CodeContext";
+import { cn } from "@/lib/utils";
+import NextTopLoader from 'nextjs-toploader';
+import { Toaster } from "@/components/ui/toaster";
+import OfflineNotification from "@/components/Offline-navigator";
+import CustomHead from "@/components/custom-head";
+import { metadata as siteMetadata } from "@/config/metadata";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const satoshi = localFont({
+  display: 'swap',
+  src: [
+    {
+      path: './fonts/satoshi.ttf',
+    },
+  ],
+  variable: '--font-satoshi',
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Bhai++ - A fun programming language",
-    template: "%s | Bhai++ - A fun programming language"
-  },
-  description: "A fun programming language developed by Ankush for fun.",
-};
+export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
   children,
@@ -30,9 +29,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning={true}>
+      <head>
+        <CustomHead />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning={true}
+        className={cn(
+          'font-satoshi antialiased',
+          satoshi.variable
+        )}
       >
         <ThemeProvider
           attribute="class"
@@ -40,8 +46,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange >
           <CodeProvider>
+            <NextTopLoader
+              showSpinner={false}
+            />
             <Navbar />
+            <OfflineNotification />
             {children}
+            <Toaster />
           </CodeProvider>
         </ThemeProvider>
       </body>

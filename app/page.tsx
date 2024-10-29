@@ -7,7 +7,7 @@ import { SubmitButton } from '@/components/code/Submitbutton';
 export default function CodePlaygroundPage() {
   return (
     <CodeProvider>
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-[#F0F0F0] dark:bg-[#202020]">
         <main className="container mx-auto px-4 py-8">
           <div className="space-y-6">
             <div>

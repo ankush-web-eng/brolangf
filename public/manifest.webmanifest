@@ -1,0 +1,37 @@
+{
+  "theme_color": "#F0F0F0",
+  "background_color": "#33F9FF",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "android-chrome-512x512.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "android-chrome-512x512.png",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait",
+  "display": "standalone",
+  "dir": "auto",
+  "lang": "en-US",
+  "name": "Bhai++",
+  "short_name": "Bhai++",
+  "description": "Bhai++ is a fun programming language made for fun by Ankush",
+  "id": "bhai++",
+  "start_url": "/"
+}
