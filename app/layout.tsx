@@ -10,6 +10,7 @@ import { Toaster } from "@/components/ui/toaster";
 import OfflineNotification from "@/components/Offline-navigator";
 import CustomHead from "@/components/custom-head";
 import { metadata as siteMetadata } from "@/config/metadata";
+import { ScrollBarProps } from "@/components/Scrollbar";
 
 const satoshi = localFont({
   display: 'swap',
@@ -36,7 +37,7 @@ export default function RootLayout({
       <body
         suppressHydrationWarning={true}
         className={cn(
-          'font-satoshi antialiased',
+          'font-satoshi antialiased bg-[#FEFDFC] dark:bg-[#202020]',
           satoshi.variable
         )}
       >
@@ -46,13 +47,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange >
           <CodeProvider>
-            <NextTopLoader
-              showSpinner={false}
-            />
-            <Navbar />
-            <OfflineNotification />
-            {children}
-            <Toaster />
+            <ScrollBarProps >
+              <NextTopLoader
+                showSpinner={false}
+              />
+              <Navbar />
+              <OfflineNotification />
+              {children}
+              <Toaster />
+            </ScrollBarProps>
           </CodeProvider>
         </ThemeProvider>
       </body>
