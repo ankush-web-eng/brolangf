@@ -60,6 +60,7 @@ const Cursor = ({ position }: { position: { left: number; width: number; opacity
 };
 
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const NavContent = ({ isMobile = false, setMobileMenuOpen = (open: boolean) => { } }) => {
 	const [position, setPosition] = useState({
 		left: 0,
@@ -150,9 +151,9 @@ export const Navbar = () => {
 			{/* Desktop Navbar */}
 			<AnimatePresence mode="wait">
 				<motion.nav
-					initial={{ y: -100 }}
-					animate={{ y: visible ? 0 : -100 }}
-					transition={{ duration: 0.2 }}
+					initial={{ y: 0 }}
+					animate={{ y: visible ? 0 : -150 }}
+					transition={{ duration: 0.3 }}
 					className="fixed z-[99999] w-full top-5 hidden md:block"
 				>
 					<div className="flex justify-center">

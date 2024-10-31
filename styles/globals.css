@@ -62,6 +62,16 @@ body {
   }
 }
 
+::selection {
+  background-color: #fcff3d; 
+  color: #000000; 
+}
+
+::-moz-selection {
+  background-color: #fcff3d; 
+  color: #000000; 
+}
+
 @layer base {
   * {
     @apply border-border;

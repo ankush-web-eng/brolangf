@@ -37,13 +37,13 @@ export default function RootLayout({
       <body
         suppressHydrationWarning={true}
         className={cn(
-          'font-satoshi antialiased bg-[#FEFDFC] dark:bg-[#202020]',
+          'font-satoshi antialiased bg-[#FEFDFC] dark:bg-[#3e3e3e]',
           satoshi.variable
         )}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange >
           <CodeProvider>
