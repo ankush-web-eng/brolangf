@@ -1,5 +1,16 @@
 import LandingPage from "@/components/layout/Landing";
+import { Metadata } from "next";
 
-export default async function Page() {
+export const metadata = {
+  title: "Home",
+  description: "A fun programming language made for fun by Ankush written in Golang.",
+  openGraph: {
+    images: [{
+      url: "/landing.png"
+    }]
+  }
+} satisfies Metadata;
+
+export default function Page() {
   return <LandingPage />;
 }

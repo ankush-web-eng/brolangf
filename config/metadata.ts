@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const siteConfig = {
     name: "Bhai++",
-    description: "A fun programming language made by Ankush written in Golang!",
+    description: "A fun programming language made for fun by Ankush written in Golang.",
     url: "https://playground.ankushsingh.tech",
     ogImage: "https://ankushsingh.tech/landing.png",
     profileImage: "https://ankushsingh.tech/Ankush.png",
@@ -70,6 +70,7 @@ export const metadata = {
     // verification: {
     //     google: "",
     // },
+    
 } satisfies Metadata;
 
 export default siteConfig;

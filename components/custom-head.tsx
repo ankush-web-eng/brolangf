@@ -5,12 +5,12 @@ export default function CustomHead() {
     <>
       <meta
         name="description"
-        content="This is fun programming language made for fun by Ankush written in Golang."
+        content="A fun programming language made for fun by Ankush written in Golang."
       />
       <meta name="application-name" content={siteConfig.name} />
 
       {/* PWA Meta Tags */}
-      <link rel="manifest" href={`${siteConfig.url}/manifest.json`} />
+      <link rel="manifest" href={`${siteConfig.url}/manifest.webmanifest`} />
       <meta name="theme-color" content={siteConfig.themeColor} />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="mobile-web-app-status-bar-style" content="default" />

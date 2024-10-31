@@ -149,9 +149,9 @@ export const Navbar = () => {
 	return (
 		<>
 			{/* Desktop Navbar */}
-			<AnimatePresence mode="wait">
+			<AnimatePresence mode="popLayout">
 				<motion.nav
-					initial={{ y: 0 }}
+					initial={{ y: -100 }}
 					animate={{ y: visible ? 0 : -150 }}
 					transition={{ duration: 0.3 }}
 					className="fixed z-[99999] w-full top-5 hidden md:block"
