@@ -166,7 +166,7 @@ export const Navbar = () => {
 			<div className="md:hidden fixed z-[99999] top-0 left-0 right-0">
 				<motion.div
 					initial={{ y: -100 }}
-					animate={{ y: visible ? 0 : -100 }}
+					animate={{ y: visible ? -100 : 0 }}
 					transition={{ duration: 0.2 }}
 					className="bg-white dark:bg-gray-900 p-4 flex justify-between items-center shadow-lg"
 				>

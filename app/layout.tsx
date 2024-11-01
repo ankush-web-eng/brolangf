@@ -37,7 +37,7 @@ export default function RootLayout({
       <body
         suppressHydrationWarning={true}
         className={cn(
-          'font-satoshi antialiased bg-[#FEFDFC] dark:bg-[#3e3e3e]',
+          'font-satoshi antialiased bg-[#FDFDF9] dark:bg-[#3e3e3e]',
           satoshi.variable
         )}
       >

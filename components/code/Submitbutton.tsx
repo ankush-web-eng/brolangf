@@ -5,7 +5,7 @@ import { useCode } from '@/context/CodeContext';
 
 export const SubmitButton = () => {
   const { codeState, submitCode } = useCode();
-  
+
   return (
     <Button
       onClick={submitCode}
