@@ -87,7 +87,7 @@ const NavContent = ({ isMobile = false, setMobileMenuOpen = (open: boolean) => {
 			<Tab setPosition={setPosition} isMobile={isMobile}>
 				<Link
 					className="w-full h-full block"
-					href="#playground"
+					href="/playground"
 					onClick={() => isMobile && setMobileMenuOpen(false)}
 				>
 					Playground
@@ -96,7 +96,7 @@ const NavContent = ({ isMobile = false, setMobileMenuOpen = (open: boolean) => {
 			<Tab setPosition={setPosition} isMobile={isMobile}>
 				<Link
 					className="w-full h-full block"
-					href="#docs"
+					href="/docs"
 					onClick={() => isMobile && setMobileMenuOpen(false)}
 				>
 					Docs
@@ -170,7 +170,7 @@ export const Navbar = () => {
 					transition={{ duration: 0.2 }}
 					className="bg-white dark:bg-gray-900 p-4 flex justify-between items-center shadow-lg"
 				>
-					<span className="font-bold">Bhai++</span>
+					<span className="font-bold">Brolang</span>
 
 					<button
 						onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

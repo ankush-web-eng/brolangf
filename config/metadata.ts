@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteConfig = {
-    name: "Bhai++",
+    name: "Brolang",
     description: "A fun programming language made for fun by Ankush written in Golang.",
     url: "https://playground.ankushsingh.tech",
     ogImage: "https://ankushsingh.tech/landing.png",
@@ -16,7 +16,7 @@ export const metadata = {
         template: `%s - ${siteConfig.name}`,
     },
     description: siteConfig.description,
-    keywords: ["Ankush Singh Tech", "Bhai++", "Programming Language", "Fun Programming Language", "Bhai++", "Toy language", "Golang"],
+    keywords: ["Ankush Singh Tech", "Brolang", "Programming Language", "Fun Programming Language", "Toy language", "Golang"],
     authors: [{ name: "Ankush Singh" }],
     creator: "Ankush Singh",
 

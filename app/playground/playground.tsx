@@ -44,7 +44,7 @@ export default function CodePlaygroundPage() {
   return (
     <CodeProvider>
       <motion.div
-        className="min-h-screen bg-gradient-to-b from-background to-background/80 pt-20"
+        className="min-h-screen bg-[#FDFDF9] dark:bg-[#060606] pt-20"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -58,7 +58,7 @@ export default function CodePlaygroundPage() {
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.3, delay: 0.1 }}
               >
-                Bhai++ Playground
+                Brolang Playground
               </motion.h1>
               <motion.p
                 className="text-muted-foreground"
@@ -66,7 +66,7 @@ export default function CodePlaygroundPage() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                Write and execute your Bhai++ code below.
+                Write and execute your Brolang code below.
               </motion.p>
             </motion.div>
 
@@ -103,6 +103,7 @@ export default function CodePlaygroundPage() {
             </div>
           </div>
         </main>
+        <div className='min-h-screen flex justify-center items-center'>test</div>
       </motion.div>
     </CodeProvider>
   );

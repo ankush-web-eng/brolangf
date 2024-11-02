@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
-import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/context/ThemeProvider";
 import { CodeProvider } from "@/context/CodeContext";
 import { cn } from "@/lib/utils";
@@ -11,6 +10,7 @@ import OfflineNotification from "@/components/Offline-navigator";
 import CustomHead from "@/components/custom-head";
 import { metadata as siteMetadata } from "@/config/metadata";
 import { ScrollBarProps } from "@/components/Scrollbar";
+import Header from "@/components/Header";
 
 const satoshi = localFont({
   display: 'swap',
@@ -51,7 +51,7 @@ export default function RootLayout({
               <NextTopLoader
                 showSpinner={false}
               />
-              <Navbar />
+              <Header />
               <OfflineNotification />
               {children}
               <Toaster />

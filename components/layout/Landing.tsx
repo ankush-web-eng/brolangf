@@ -11,7 +11,7 @@ export default function LandingPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="min-h-screen w-full bg-white dark:bg-black transition-all duration-300 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            className="min-h-screen w-full bg-[#FDFDF9] dark:bg-[#060606] transition-all duration-300 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
         >
             <div className="container mx-auto px-4">
                 <section className="pt-32 pb-16 text-center relative">
@@ -30,7 +30,7 @@ export default function LandingPage() {
                         transition={{ duration: 1, delay: 0.3 }}
                         className="inline-flex items-center px-4 py-2 rounded-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border border-gray-200 dark:border-gray-800 mb-8 shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)]"
                     >
-                        <span className="text-sm">✨ Introducing Bhai++</span>
+                        <span className="text-sm">✨ Introducing Brolang</span>
                     </motion.div>
 
                     <motion.h1 

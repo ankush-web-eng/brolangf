@@ -29,9 +29,9 @@
   "display": "standalone",
   "dir": "auto",
   "lang": "en-US",
-  "name": "Bhai++",
-  "short_name": "Bhai++",
-  "description": "Bhai++ is a fun programming language made for fun by Ankush",
-  "id": "bhai++",
+  "name": "Brolang",
+  "short_name": "Brolang",
+  "description": "Brolang is a fun programming language made for fun by Ankush",
+  "id": "Brolang",
   "start_url": "/"
 }
