@@ -1,5 +1,5 @@
 <div align="center">
-<img src = "/code/landing.png">
+<img src = "/public/landing.png">
 </div>
 
 # Brolang

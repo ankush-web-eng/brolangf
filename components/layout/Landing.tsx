@@ -1,7 +1,7 @@
 'use client';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import GridPattern from '../ui/grid-pattern';
+import GridPattern from '@/components/ui/grid-pattern';
 import { cn } from '@/lib/utils';
 import { motion } from "framer-motion";
 
@@ -13,8 +13,8 @@ export default function LandingPage() {
             transition={{ duration: 1 }}
             className="min-h-screen w-full bg-[#FDFDF9] dark:bg-[#060606] transition-all duration-300 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
         >
-            <div className="container mx-auto px-4">
-                <section className="pt-32 pb-16 text-center relative">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <section className="pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-16 text-center relative">
                     <div className="absolute inset-0 -z-10">
                         <motion.div 
                             initial={{ scale: 0.9, opacity: 0 }}
@@ -37,7 +37,7 @@ export default function LandingPage() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.6 }}
-                        className="text-6xl sm:text-7xl font-bold tracking-tight mb-8"
+                        className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
                     >
                         <span className="bg-clip-text drop-shadow-2xl text-transparent bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-violet-400">
                             Programming Language
@@ -52,7 +52,7 @@ export default function LandingPage() {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.9 }}
-                        className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12"
+                        className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-12 px-4 sm:px-0"
                     >
                         Programming language written in <span className='italic bg-teal-400 text-white'>Golang</span>
                         which aims to make programming fun.
@@ -62,7 +62,7 @@ export default function LandingPage() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 1.2 }}
-                        className="flex flex-col sm:flex-row gap-4 justify-center"
+                        className="flex flex-col sm:flex-row gap-4 justify-center px-4 sm:px-0"
                     >
                         <Link href={'/docs'}>
                             <Button 

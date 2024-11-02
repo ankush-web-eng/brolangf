@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://brolang.ankushsingh.tech
+
+# Sitemaps
+Sitemap: https://brolang.ankushsingh.tech/sitemap.xml
