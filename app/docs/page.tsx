@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Documentation from "./docs";
+import DocumentationPage from "./docs";
 
 export const metadata = {
     title: "Docs",
@@ -7,5 +7,5 @@ export const metadata = {
 } satisfies Metadata;
 
 export default function Page(){
-    return <Documentation />
+    return <DocumentationPage />
 }

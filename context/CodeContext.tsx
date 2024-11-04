@@ -6,7 +6,7 @@ const CodeContext = createContext<CodeContextType | undefined>(undefined);
 
 export function CodeProvider({ children }: { children: React.ReactNode }) {
     const [codeState, setCodeState] = useState<CodeState>({
-        code: '// Start writing your code here',
+        code: '',
         response: '',
         isLoading: false,
     });
@@ -25,10 +25,9 @@ export function CodeProvider({ children }: { children: React.ReactNode }) {
             });
 
             const data = await response.json();
-            console.log(data);
             setCodeState(prev => ({
                 ...prev,
-                response: data.result || data.error,
+                response: data.error || data.result,
                 isLoading: false,
             }));
         } catch (error) {

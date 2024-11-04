@@ -74,7 +74,7 @@ export default function CodePlaygroundPage() {
 
             <motion.div
                   variants={itemVariants}
-                  whileHover={{ scale: 1.01 }}
+                  whileHover={{ scale: 1.0 }}
                   transition={{ duration: 0.2 }}
                 >
                   <CodeEditor />

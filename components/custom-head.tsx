@@ -16,12 +16,14 @@ export default function CustomHead() {
       <meta name="mobile-web-app-status-bar-style" content="default" />
       <meta name="mobile-web-app-title" content={siteConfig.name} />
 
+      {/* Open Graph / Facebook Meta Tags */}
       <meta property="og:url" content="https://brolang.ankushsingh.tech" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Home" />
       <meta property="og:description" content="A fun programming language made for fun by Ankush written in Golang." />
       <meta property="og:image" content="https://brolang.ankushsingh.tech/landing.png" />
 
+      {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:domain" content="brolang.ankushsingh.tech" />
       <meta property="twitter:url" content="https://brolang.ankushsingh.tech" />
