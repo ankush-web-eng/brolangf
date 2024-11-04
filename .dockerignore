@@ -1,0 +1,11 @@
+/node_modules
+.yarn/*
+
+/.next/
+/build
+
+.env*
+.vercel
+
+*.tsbuildinfo
+next-env.d.ts
