@@ -12,11 +12,10 @@ model Bug {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   bug       String
-  status    Status @default(OPEN)
+  status    Status   @default(OPEN)
 }
 
 enum Status {
   OPEN
-  IN_PROGRESS
   CLOSED
 }

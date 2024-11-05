@@ -2,7 +2,7 @@ import LandingPage from "@/components/layout/Landing";
 import { Metadata } from "next";
 
 export const metadata = {
-  title: "Home",
+  title: "Brolang",
   description: "A fun programming language made for fun by Ankush written in Golang.",
   openGraph: {
     images: [{

@@ -64,7 +64,7 @@ jaha_tak(i < 10){
   },
   {
     title: "For Loop",
-    description: "Use for loop with 'tak' keyword",
+    description: "Use for loop with 'shuru_kar' keyword",
     code: `shuru_kar(bhai_sun i = 0; i < 10; i = i + 1) {
   bol_bhai(i);
 }

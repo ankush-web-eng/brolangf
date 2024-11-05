@@ -22,13 +22,13 @@ const BugReport: React.FC<BugReportProps> = ({ setIsBugOpen }) => {
             });
             if (response.status === 201) {
                 toast({
-                    title: 'success',
+                    title: 'Success',
                     description: response.data.message,
                 });
                 setIsBugOpen(false);
             } else {
                 toast({
-                    title: 'error',
+                    title: 'Error',
                     description: 'An error occurred while reporting the bug',
                 });
             }
@@ -36,11 +36,10 @@ const BugReport: React.FC<BugReportProps> = ({ setIsBugOpen }) => {
             const axiosError = error as AxiosError<{ success: boolean, message: string }>;
             const errorMessage = axiosError.response?.data.message || 'An error occurred while reporting the bug';
             toast({
-                title: 'error',
+                title: 'Error',
                 description: errorMessage,
             });
-        }
-        finally {
+        } finally {
             setIsSending(false);
         }
     };
