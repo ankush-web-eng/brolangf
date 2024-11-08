@@ -3,6 +3,7 @@ export interface CodeSnippet {
   title: string;
   description?: string;
   code: string;
+  language: string;
 }
 
 export const documentationSections: CodeSnippet[] = [
@@ -20,6 +21,7 @@ bol_bhai(x)
 bol_bhai(naam)
 bol_bhai(jhanda)
 bol_bhai(jhanda2)`,
+    language: "javascript"
   },
   {
     title: "Arithmetic Operations",
@@ -35,6 +37,7 @@ bol_bhai(x);
 x = x % 2;
 bol_bhai(x);
 `,
+    language: "javascript"
   },
   {
     title: "Conditional Statements",
@@ -48,6 +51,7 @@ agar(x % 2 == 1) {
 } nahi_to {
   bol_bhai("Odd");
 }`,
+    language: "javascript"
   },
   {
     title: "While Loop",
@@ -58,6 +62,7 @@ jaha_tak(i < 10){
   bol_bhai(i * 2);
   i = i + 1;
 }`,
+    language: "javascript"
   },
   {
     title: "For Loop",
@@ -69,6 +74,7 @@ jaha_tak(i < 10){
 chal_bhai(bhai_sun i = 10; i > 0; i = i - 1) {
   bol_bhai(i);
 }`,
+    language: "javascript"
   },
   {
     title: "Nested Loops",
@@ -81,7 +87,8 @@ chal_bhai (bhai_sun i = 0; i < x; i = i + 1) {
     bol_bhai(j);
   }
 }
-`
+`,
+    language: "javascript"
   },
   {
     title: "Break and Continue",
@@ -94,6 +101,7 @@ chal_bhai (bhai_sun i = 0; i < x; i = i + 1) {
   }
   bol_bhai(i);
 }`,
+    language: "javascript"
   },
   {
     title: "Arrays",
@@ -108,5 +116,6 @@ shuru_kar(bhai_sun i = 0; i < 5; i = i + 1) {
   bol_bhai(arr[i]);
   bol_bhai(arr2[i]);
 }`,
+    language: "javascript"
   },
 ];
