@@ -6,6 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 import { ModeToggle } from '@/components/ui/Themetoggle';
 import BugReport from '@/components/code/BugReport';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,8 @@ const Header = () => {
         <nav suppressHydrationWarning={true} className="fixed top-0 w-full bg-[#FDFDF9] dark:bg-[#060606] border-b dark:border-none border-gray-200 z-50">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
-                    <Link href="/" className="flex items-center">
+                    <Link href="/" className="flex items-center space-x-2">
+                        <Image src="/apple-touch-icon.png" width={40} height={40} alt="Brolang Logo" className='rounded-xl' />
                         <span className="text-xl font-bold">Brolang</span>
                     </Link>
 
@@ -61,6 +63,7 @@ const Header = () => {
 
                     <div className="md:hidden">
                         <button onClick={() => setIsOpen(!isOpen)} className="p-2 rounded-lg hover:bg-gray-100">
+                            <span className='sr-only'>Header</span>
                             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                         </button>
                     </div>

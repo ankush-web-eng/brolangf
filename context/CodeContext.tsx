@@ -6,7 +6,17 @@ const CodeContext = createContext<CodeContextType | undefined>(undefined);
 
 export function CodeProvider({ children }: { children: React.ReactNode }) {
     const [codeState, setCodeState] = useState<CodeState>({
-        code: '',
+        code: `bhai_sun x = 10;
+
+jaha_tak (x > 0) {
+  x = x - 1;
+  agar (x == 4) {
+    bas_kar_bhai;
+  } nahi_to_agar (x == 7) {
+    aage_bhad_bhai;
+  }
+  bol_bhai(x);
+}`,
         response: '',
         isLoading: false,
     });
