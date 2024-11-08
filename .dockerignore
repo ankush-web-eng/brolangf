@@ -4,6 +4,7 @@
 /.next/
 /build
 
+/server
 .env*
 .vercel
 

@@ -44,8 +44,10 @@ bol_bhai(x);
     description: "Use conditional statements",
     code: `bhai_sun x = 10;
 
-agar(x % 2 == 0) {
+agar(x % 2 == 1) {
   bol_bhai("Even");
+} nahi_to_agar(x == 10) {
+  bol_bhai("Number is 10");
 } nahi_to {
   bol_bhai("Odd");
 }`,
@@ -69,22 +71,35 @@ jaha_tak(i < 10){
   bol_bhai(i);
 }
 
-shuru_kar(bhai_sun i = 10; i > 0; i = i - 1) {
+chal_bhai(bhai_sun i = 10; i > 0; i = i - 1) {
   bol_bhai(i);
 }`,
+    language: "typescript"
+  },
+  {
+    title: "Break and Continue",
+    description: "Use break and continue statements",
+    code: `chal_bhai(bhai_sun i = 0; i < 10; i = i + 1) {
+      agar(i == 5) {
+        aage_bhad_bhai;
+        } nahi_to_agar(i == 7) {
+          bas_kar_bhai;
+          }
+          bol_bhai(i);
+          }`,
     language: "typescript"
   },
   {
     title: "Arrays",
     description: "Declare arrays and track through indexes",
     code: `bhai_sun arr = [1, 2, 3, 4, 5];
-
-bol_bhai(arr);
-bol_bhai(arr[1]);
-
-shuru_kar(bhai_sun i = 0; i < 5; i = i + 1) {
-  bol_bhai(arr[i]);
-}`,
+      
+      bol_bhai(arr);
+      bol_bhai(arr[1]);
+      
+      shuru_kar(bhai_sun i = 0; i < 5; i = i + 1) {
+        bol_bhai(arr[i]);
+      }`,
     language: "typescript"
-  }
+  },
 ];

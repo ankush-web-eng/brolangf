@@ -103,7 +103,6 @@ export default function CodePlaygroundPage() {
             </div>
           </div>
         </main>
-        <div className='min-h-screen flex justify-center items-center'>test</div>
       </motion.div>
     </CodeProvider>
   );

@@ -10,6 +10,7 @@ const processMessage = async (message: string) => {
     try {
       requestBody = JSON.parse(message);
     } catch (parseError) {
+      console.error('Error parsing message:', parseError);
       // Default to wrapping message in a code object if parsing fails
       requestBody = { code: message };
     }
