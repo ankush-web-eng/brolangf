@@ -30,7 +30,7 @@ export function CodeProvider({ children }: { children: React.ReactNode }) {
             setCodeState(prev => ({ ...prev, isLoading: true }));
             let response;
             if (prefLanguage === 'hindi') {
-                response = await fetch(`${process.env.NEXT_PUBLIC_HINDI_API_URL}/compile`, {
+                response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/compile`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ code: codeState.code }),
