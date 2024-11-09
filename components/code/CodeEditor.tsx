@@ -24,7 +24,9 @@ export const CodeEditor = () => {
       keywords: [
         'bhai_sun', 'bol_bhai', 'suna_bhai', 'agar', 'nahi_to',
         'nahi_to_agar', 'jaha_tak', 'chal_bhai', 'sach',
-        'jhuth', 'bas_kar_bhai', 'aage_bhad_bhai'
+        'jhuth', 'bas_kar_bhai', 'aage_bhad_bhai', 'listen_bro',
+        'tell_bro', 'hear_bro', 'bro_if', 'bro_else', 'bro_else_if',
+        'bro_while', 'bro_for', 'bro_break', 'bro_continue', 'bro_true', 'bro_false'
       ],
 
       operators: [

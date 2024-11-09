@@ -23,7 +23,7 @@ const Header = () => {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     <Link href="/" className="flex items-center space-x-2">
-                        <Image src="/apple-touch-icon.png" width={40} height={40} alt="Brolang Logo" className='rounded-xl' />
+                        <Image src="/apple-touch-icon.png" width={40} height={40} alt="Brolang Logo" unoptimized={true} className='rounded-xl' />
                         <span className="text-xl font-bold">Brolang</span>
                     </Link>
 

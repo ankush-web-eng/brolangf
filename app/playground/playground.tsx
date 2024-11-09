@@ -4,6 +4,7 @@ import { CodeEditor } from '@/components/code/CodeEditor';
 import { ResponsePanel } from '@/components/code/ResponsePanel';
 import { SubmitButton } from '@/components/code/Submitbutton';
 import { motion } from 'framer-motion';
+import PreferredLanguageSelector from '@/components/PreferredLanguageSelector';
 
 export default function CodePlaygroundPage() {
   const containerVariants = {
@@ -68,6 +69,7 @@ export default function CodePlaygroundPage() {
               >
                 Write and execute your Brolang code below.
               </motion.p>
+              <PreferredLanguageSelector />
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">

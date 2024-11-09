@@ -7,7 +7,7 @@ const siteConfig = {
     ogImage: "https://brolang.ankushsingh.tech/landing.png",
     profileImage: "https://brolang.ankushsingh.tech/favicon-32x32.png",
     twitter: "@whyankush07",
-    themeColor: "#F0F0F0"
+    themeColor: "#FDFDF9"
 };
 
 export const metadata = {
