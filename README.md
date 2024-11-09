@@ -6,4 +6,4 @@
 
 Brolang is a fun programming language written in Golang built for fun.
 
-### It is in development and will be realesed soon.
+### It is in development and will be released soon.

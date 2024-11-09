@@ -11,7 +11,7 @@ export default function LandingPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="min-h-screen w-full bg-[#FDFDF9] dark:bg-[#060606] transition-all duration-300 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            className="min-h-screen w-full bg-[#FDFDF9] dark:bg-[#060606] transition-all duration-300 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] max-md:pt-24"
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <section className="pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-16 text-center relative">
@@ -40,12 +40,12 @@ export default function LandingPage() {
                         transition={{ duration: 1, delay: 0.6 }}
                         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8"
                     >
-                        <span className="bg-clip-text drop-shadow-2xl text-transparent bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-violet-400">
+                        <span className="bg-clip-text drop-shadow-2xl text-transparent bg-gradient-to-r from-blue-600 to-violet-700 dark:from-blue-400 dark:to-violet-400">
                             Programming Language
                         </span>
                         <br />
                         <span className="text-gray-900 dark:text-gray-100">
-                            for all Brothers
+                            for all <span className="bg-[#fcff3d] px-1 text-black">Brothers</span>
                         </span>
                     </motion.h1>
 
@@ -55,7 +55,7 @@ export default function LandingPage() {
                         transition={{ duration: 1, delay: 0.9 }}
                         className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-12 px-4 sm:px-0"
                     >
-                        Programming language written in <span className='italic bg-teal-400 text-white'>Golang</span>
+                        Programming language written in<span className='italic bg-teal-400 text-white px-1'>Golang</span>
                         which aims to make programming fun.
                     </motion.p>
 

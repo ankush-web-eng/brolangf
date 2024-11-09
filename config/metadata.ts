@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteConfig = {
-    name: "Brolang",
+    name: "Brolang - A fun programming language for all brothers!",
     description: "A fun programming language made for fun by Ankush written in Golang.",
     url: "https://brolang.ankushsingh.tech",
     ogImage: "https://brolang.ankushsingh.tech/landing.png",
