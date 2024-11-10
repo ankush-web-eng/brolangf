@@ -10,11 +10,12 @@
   Brolang is a fun programming language written in Golang built for fun by <a href="https://x.com/whyankush07">Ankush</a>
 </p>
 
-- Supports both pure english and pure hindi syntax, tutorial will be linked soon.
+<p align="center"> Supports both pure english and pure hindi syntax, tutorial will be linked soon.
+</p>
 
 ## 🚀 Getting Started
 
-You can get started with notty by visiting [brolang.ankushsingh.tech](https://brolang.ankushsingh.tech)
+You can get started with BROLANG by visiting [brolang.ankushsingh.tech](https://brolang.ankushsingh.tech)
 
 - To set up locally, you can clone the repository and run the following commands:
 
@@ -38,9 +39,13 @@ go run main.go
 
 - To try out BROLANG, you can visit [docs](https://brolang.ankushsingh.tech/docs) page for docs available in both Hindi and English.
 
+<div align="center">
+<img src = "/public/docs.png">
+</div>
+
 ### Tech Stack
 
-- BROLANG was primarily built on an event-based architecture
+- BROLANG was primarily built on an **Event-Based Architecture**
 
 - **Frontend**: [Nextjs-15](https://nextjs.org/)
 - **Backend**: [Golang](https://go.dev/)
@@ -53,7 +58,8 @@ go run main.go
 <img src = "/public/architecture.png">
 </div>
 
-- On production, this application is working on Client-Server architecture because of this independent student developer's tight budget, moreover the code has been commented context/Codecontext.tsx.
+- On production, this application is working on Client-Server architecture because of this independent student-developer's tight budget, moreover the code has been commented in context/CodeContext.tsx.
+
 - The Web-Socket server's code and Worker's code is available in server/ directory.
 
 ### Open Source
@@ -64,4 +70,4 @@ go run main.go
 
 ## 📝 License
 
-Notty is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
+BROLANG is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
