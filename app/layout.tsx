@@ -11,6 +11,7 @@ import CustomHead from "@/components/custom-head";
 import { metadata as siteMetadata } from "@/config/metadata";
 import { ScrollBarProps } from "@/components/Scrollbar";
 import Header from "@/components/Header";
+import { Analytics } from "@vercel/analytics/react"
 
 const satoshi = localFont({
   display: 'swap',
@@ -53,6 +54,7 @@ export default function RootLayout({
               />
               <Header />
               <OfflineNotification />
+              <Analytics />
               {children}
               <Toaster />
             </ScrollBarProps>
