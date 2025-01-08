@@ -56,6 +56,7 @@ go run main.go
 - **Menu and UI**: [TailwindCSS](https://tailwindcss.com/) + [Aceternity UI](https://ui.aceternity.com/) + [Shadcn UI](https://ui.shadcn.com)
 <div align="center">
 <img src = "/public/architecture.png">
+<p>([Excallidraw](https://excalidraw.com/#json=UN8yz9cX29NkboT-hDAzx,lUIkw23AGJaiGYYD2Wg4Ig))</p>
 </div>
 
 - On production, this application is working on Client-Server architecture because of this independent student-developer's tight budget, moreover the code has been commented in context/CodeContext.tsx.
