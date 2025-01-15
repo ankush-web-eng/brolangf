@@ -1,4 +1,4 @@
-import { ExpressionStatement, Program, LetStatement, IfExpression, ForExpression, WhileExpression, BreakStatement, ContinueStatement, BlockStatement, IntegerLiteral, BooleanLiteral, StringLiteral, ArrayLiteral, IndexExpression, PrefixExpression, InfixExpression, CallExpression, Identifier } from './ast';
+import { ExpressionStatement, Program, LetStatement, IfExpression, ForExpression, WhileExpression, BreakStatement, ContinueStatement, BlockStatement, IntegerLiteral, BooleanLiteral, StringLiteral, ArrayLiteral, IndexExpression, PrefixExpression, InfixExpression, CallExpression, Identifier, PrintStatement } from './ast';
 import { Object, Null, ReturnValue, ErrorObj, BreakControl, ContinueControl, Integer, BooleanObj, StringObj, ArrayObj, FunctionObj } from './object';
 import { Environment } from './environment';
 import { Node } from './ast';
@@ -66,6 +66,9 @@ export function evalNode(node: Node, env: Environment): Object {
 
         case Identifier:
             return evalIdentifier(node as Identifier, env);
+
+        case PrintStatement:
+            return evalPrintStatement(node as PrintStatement, env);
 
         // case FunctionLiteral:
         //     return evalFunctionLiteral(node as FunctionLiteral, env);
@@ -328,6 +331,35 @@ function evalIdentifier(node: Identifier, env: Environment): Object {
     } else {
         return new ErrorObj(`identifier not found: ${node.value}`);
     }
+}
+
+function evalPrintStatement(stmt: PrintStatement, env: Environment): Object {
+    if (!stmt.expression) {
+        console.log(); // Print empty line if no expression
+        return new Null();
+    }
+
+    const result = evalNode(stmt.expression, env);
+    if (result instanceof ErrorObj) {
+        return result;
+    }
+
+    // Handle different types of values to print
+    if (result instanceof Integer) {
+        console.log(result.value);
+    } else if (result instanceof StringObj) {
+        console.log(result.value);
+    } else if (result instanceof BooleanObj) {
+        console.log(result.value ? 'sach' : 'jhuth');
+    } else if (result instanceof ArrayObj) {
+        console.log('[' + result.elements.map(e => e.inspect()).join(', ') + ']');
+    } else if (result instanceof Null) {
+        console.log("Hn beta, jis keyboard se ladkiyo k DMs m milta h tu, typing na hori hogi tere se isi keyboard se!!");
+    } else {
+        console.log(result.inspect());
+    }
+
+    return new Null();
 }
 
 function isTruthy(obj: Object): boolean {

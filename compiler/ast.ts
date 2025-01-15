@@ -78,11 +78,11 @@ export class AssignStatement implements Statement {
 
 export class PrintStatement implements Statement {
     token: Token;
-    expression: Expression;
+    expression: Expression | null;
 
-    constructor(token: Token, expression: Expression) {
+    constructor(token: Token) {
         this.token = token;
-        this.expression = expression;
+        this.expression = null;
     }
 
     statementNode(): void { }
