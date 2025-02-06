@@ -1,16 +1,17 @@
 'use client';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Bug } from 'lucide-react';
-import { RxCross2 } from "react-icons/rx";
+import { Menu, X } from 'lucide-react';
+// import { Bug } from 'lucide-react';
+// import { RxCross2 } from "react-icons/rx";
 import { ModeToggle } from '@/components/ui/Themetoggle';
-import BugReport from '@/components/code/BugReport';
+// import BugReport from '@/components/code/BugReport';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isBugOpen, setIsBugOpen] = useState(false);
+    // const [isBugOpen, setIsBugOpen] = useState(false);
 
     const navItems = [
         { name: 'Docs', href: '/docs', isNew: false },
@@ -48,7 +49,7 @@ const Header = () => {
                     <div className="flex items-center space-x-4">
                         <ModeToggle />
 
-                        <motion.div
+                        {/* <motion.div
                             whileHover={{ scale: 1.1 }}
                             className="relative cursor-pointer"
                         >
@@ -58,7 +59,7 @@ const Header = () => {
                                 Report a bug
                             </span>}
                             {isBugOpen && <BugReport setIsBugOpen={setIsBugOpen} />}
-                        </motion.div>
+                        </motion.div> */}
                     </div>
 
                     <div className="md:hidden">
